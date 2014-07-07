@@ -1,0 +1,14 @@
+
+html
+    head
+        title #{title} - My site
+    body
+        form(method="POST", action="/user")
+            input(type="hidden", name="_method", value="PUT")
+            h1 Please fill ur details
+            p name
+            input(type="text",name="name",id="name")
+            p age
+            input(type="text",name="age",id="age")
+            p
+            input(type="submit",value="Login")
