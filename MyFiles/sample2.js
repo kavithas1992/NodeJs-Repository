@@ -1,5 +1,5 @@
 var express=require('express');
-var routes = require('./routes/index');
+var routes = require('../routes/index');
 //var users = require('./routes/users');
 var bodyParser = require('body-parser');
 var app=express();
