@@ -1,0 +1,32 @@
+
+var fs = require('fs');
+fs.readFile("./CalculatorData.json",function(err,data)
+{
+    if(err)
+    {
+        err;
+    }
+    else
+    {
+        var JsonData = data;
+        JsonData = JSON.parse(JsonData);
+        process.stdin.setEncoding('utf8');
+
+        process.stdin.on('readable', function()
+        {
+            var chunk = process.stdin.read();
+
+            if(chunk == 1)
+             {
+                 var Result = JsonData.values.value1 + JsonData.values.value2 + JsonData.values.value3;
+                 console.log(Result);
+             }
+            if(chunk == 2)
+            {
+                var Result = JsonData.values.value1 - JsonData.values.value2 - JsonData.values.value3;
+                console.log(Result);
+            }
+            process.exit();
+        })
+    }
+});
