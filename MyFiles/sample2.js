@@ -1,3 +1,5 @@
+//Sample Jade file rendering output in another Jade file
+
 var express=require('express');
 var routes = require('../routes/index');
 //var users = require('./routes/users');
