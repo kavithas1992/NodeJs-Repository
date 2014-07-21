@@ -1,0 +1,254 @@
+---
+  locale:
+    default:
+      -
+        queryParams: &default_queryParams
+          q: "flowers"
+          o: "101594"
+          l: "dir"
+          qsrc: "999"
+        expected: &default_expected
+          lp.adShading: "#FDFEEE"
+          sp.adShading: "#FFFFFF"
+          hasSmartAnswer: "false" #Muted the smart answer test case as we are rolling it as LD first
+
+  en_AU:
+    default:
+      -
+        queryParams: &au_queryParams
+          <<: *default_queryParams
+          o: "101594"
+        expected:
+          <<: *default_expected
+
+  fr_FR:
+    default:
+      -
+        queryParams: &fr_queryParams
+          <<: *default_queryParams
+          o: "3606"
+          q: "fleurs"
+        expected:
+          <<: *default_expected
+
+  de_DE:
+    default:
+      -
+        queryParams: &de_queryParams
+          <<: *default_queryParams
+          o: "3314"
+        expected:
+          <<: *default_expected
+          lp.adShading: "#F5FCF0"
+
+  it_IT:
+    default:
+      -
+        queryParams: &it_queryParams
+          <<: *default_queryParams
+          o: "4077"
+        expected:
+          <<: *default_expected
+
+  pt_BR:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "4289"
+        expected:
+          <<: *default_expected
+          
+  en_AT:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "101599"
+          q: "Blumen"
+        expected:
+          <<: *default_expected
+  
+  es_CL:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "1479"
+        expected:
+          <<: *default_expected
+  
+  da_DK:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "22000"
+        expected:
+          <<: *default_expected
+  
+  es_ES:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          q: "world cup"
+          o: "1421"
+        expected:
+          <<: *default_expected
+          pixelName: "ForwardClickPixel"
+  
+  hi_IN:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          q: "world cup"
+          o: "10000876"
+        expected:
+          <<: *default_expected
+          pixelName: "ForwardClickPixel"
+  
+  es_AR:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "2990"
+          q: "flowers"
+        expected:
+          <<: *default_expected
+
+  es_US:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "7569"
+          q: "flowers"
+        expected:
+          <<: *default_expected
+
+  es_MX:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "102463"
+        expected:
+          <<: *default_expected
+  
+  en_MY:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "7509"
+          q: "cars"
+        expected:
+          <<: *default_expected
+
+  nl_NL:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "5009"
+        expected:
+          <<: *default_expected
+
+  en_PH:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "7550"
+        expected:
+          <<: *default_expected
+  
+  pl_PL:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "3302"
+        expected:
+          <<: *default_expected
+  
+  pt_PT:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "10001019"
+        expected:
+          <<: *default_expected
+  
+  ru_RU:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "14351"
+        expected:
+          <<: *default_expected
+  
+  en_SE:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "101584"
+        expected:
+          <<: *default_expected
+  
+  en_SG:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "7529"
+        expected:
+          <<: *default_expected
+  
+  af_ZA:
+    default:
+      -
+        queryParams:
+          <<: *default_queryParams
+          o: "40000"
+        expected:
+          <<: *default_expected
+
+  en_NO:
+     default:
+       -
+         queryParams:
+           <<: *default_queryParams
+           o: "8008"
+         expected:
+           <<: *default_expected
+  in_ID:
+     default:
+       -
+         queryParams:
+           <<: *default_queryParams
+           o: "24950"
+         expected:
+           <<: *default_expected
+  vi_VN:
+     default:
+       -
+         queryParams:
+           <<: *default_queryParams
+           o: "24960"
+         expected:
+           <<: *default_expected
+  th_TH:
+     default:
+       -
+         queryParams:
+           <<: *default_queryParams
+           o: "24955"
+         expected:
+           <<: *default_expected
